@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.5, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /home/oleh/Devops/lab2
+collected 4 items
+
+tests/tests.py ..F.                                                      [100%]
+
+=================================== FAILURES ===================================
+___________________________ TestClass.test_home_work ___________________________
+
+self = <tests.tests.TestClass testMethod=test_home_work>
+
+    def test_home_work(self):
+        self.assertEqual(home_work("http://date.jsontest.com/"), "day")
+    
+    
+>       self.assertEqual(home_work("http://date.jsontest.com/"), "night")
+E       AssertionError: 'day' != 'night'
+E       - day
+E       + night
+
+tests/tests.py:28: AssertionError
+----------------------------- Captured stdout call -----------------------------
+Доброго дня
+Доброго дня
+=========================== short test summary info ============================
+FAILED tests/tests.py::TestClass::test_home_work - AssertionError: 'day' != '...
+========================= 1 failed, 3 passed in 1.84s ==========================
+========================================
+Результат без параметрів: 
+No URL passed to function
+========================================
+Результат з правильною URL: 
+Time is:  11:53:08 AM
+Date is:  11-15-2020
+Доброго дня
+day
