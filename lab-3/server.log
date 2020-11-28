@@ -1,0 +1,16 @@
+INFO 2020-11-29 00:48:13,305 root : Сервер доступний. Час на сервері: Sat, 28 Nov 2020 22:48:13 +0000
+INFO 2020-11-29 00:48:13,305 root : Запитувана сторінка: : /health/
+INFO 2020-11-29 00:48:13,306 root : Відповідь сервера місти наступні поля:
+INFO 2020-11-29 00:48:13,306 root : Ключ: date, Значення: Sat, 28 Nov 2020 22:48:13 +0000
+INFO 2020-11-29 00:48:13,306 root : Ключ: current_page, Значення: /health/
+INFO 2020-11-29 00:48:13,306 root : Ключ: server_info, Значення: 5.4.0-53-generic
+INFO 2020-11-29 00:48:13,306 root : Ключ: client_info, Значення: tolik
+ERROR 2020-11-29 00:49:13,369 root : can't open a page: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f99e8ed6280>: Failed to establish a new connection: [Errno 111] Connection refused'))
+ERROR 2020-11-29 00:50:13,433 root : can't open a page: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f99e8ed6a30>: Failed to establish a new connection: [Errno 111] Connection refused'))
+INFO 2020-11-29 00:51:13,559 root : Сервер доступний. Час на сервері: Sat, 28 Nov 2020 22:51:13 +0000
+INFO 2020-11-29 00:51:13,559 root : Запитувана сторінка: : /health/
+INFO 2020-11-29 00:51:13,560 root : Відповідь сервера місти наступні поля:
+INFO 2020-11-29 00:51:13,560 root : Ключ: date, Значення: Sat, 28 Nov 2020 22:51:13 +0000
+INFO 2020-11-29 00:51:13,560 root : Ключ: current_page, Значення: /health/
+INFO 2020-11-29 00:51:13,560 root : Ключ: server_info, Значення: 5.4.0-53-generic
+INFO 2020-11-29 00:51:13,560 root : Ключ: client_info, Значення: tolik

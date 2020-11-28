@@ -1,7 +1,7 @@
+import time
 from django.shortcuts import render
 from django.http import JsonResponse
 import os
-from datetime import datetime
 
 
 def main(request):
@@ -9,5 +9,8 @@ def main(request):
 
 
 def health(request):
-    response = {'date': 'test1', 'current_page': "test2", 'server_info': "test3", 'client_info': "test4"}
+    response = dict(date= time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime()),
+                    current_page=request.get_full_path(),
+                    server_info=os.uname().release,
+                    client_info=os.getlogin())
     return JsonResponse(response)
